@@ -1,0 +1,13 @@
+This folder is for image assets used by the site.
+
+You can use this file to keep notes or remind yourself which image files to add.
+
+Example image filenames to add here:
+- logo.svg
+- logo.png
+- team-mark.jpg
+- service-drain.jpg
+
+The SVG image file is only a placeholder graphic for the page, but this text file is where you can type.
+
+When you want, you can replace the placeholder image with your real logo file and update the HTML to reference it.
