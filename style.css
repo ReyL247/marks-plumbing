@@ -565,6 +565,73 @@ nav {
   letter-spacing: 1px;
 }
 
+/* TEAM */
+.team {
+  padding: 6rem 5%;
+  background: #0b1320;
+}
+
+.team-intro {
+  color: var(--muted);
+  max-width: 700px;
+  margin-bottom: 2.2rem;
+  font-size: 0.98rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.team-card {
+  background: var(--dark2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1.8rem;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.team-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(93,147,245,0.55);
+}
+
+.team-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #091324;
+  background: linear-gradient(135deg, var(--amber), var(--lime));
+  margin-bottom: 1rem;
+}
+
+.team-card h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  color: var(--white);
+  margin-bottom: 0.2rem;
+}
+
+.team-role {
+  color: var(--amber);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 0.8rem;
+}
+
+.team-bio {
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
 /* â”€â”€ REVIEWS â”€â”€ */
 .reviews {
   padding: 6rem 5%;
@@ -899,6 +966,7 @@ footer {
 /* â”€â”€ RESPONSIVE â”€â”€ */
 @media (max-width: 900px) {
   .why { grid-template-columns: 1fr; gap: 3rem; }
+  .team-grid { grid-template-columns: 1fr; }
   .reviews-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
 }
@@ -927,4 +995,3 @@ footer {
   .float-call span { display: none; }
   .float-call { padding: 1rem; border-radius: 50%; }
 }
-
