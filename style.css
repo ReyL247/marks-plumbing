@@ -188,6 +188,24 @@ nav {
 }
 .nav-links a:hover { color: var(--white); }
 
+.nav-logo-right {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.nav-logo-img--right {
+  width: 42px;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .nav-logo-right {
+    display: none;
+  }
+}
+
 .nav-call {
   background: var(--amber) !important;
   color: var(--dark) !important;
